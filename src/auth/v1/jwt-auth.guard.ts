@@ -19,6 +19,7 @@ export class JwtAuthGuard extends AuthGuard('jwt') implements CanActivate {
       { path: '/v1/auth/login', method: 'POST' },
       { path: '/v1/auth/register', method: 'POST' },
       { path: '/v1/url/redirect', method: 'GET' },
+      { path: '/v1/auth/refresh', method: 'POST' },
     ];
 
     const isExcluded = excludedRoutes.some(
@@ -28,6 +29,12 @@ export class JwtAuthGuard extends AuthGuard('jwt') implements CanActivate {
 
     if (isExcluded) {
       return true;
+    }
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const accessToken = request.cookies?.access_token;
+    if (accessToken) {
+      request.headers.authorization = `Bearer ${accessToken}`;
     }
 
     const result = (await super.canActivate(context)) as boolean;
