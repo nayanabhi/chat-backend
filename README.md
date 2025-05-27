@@ -1,3 +1,4 @@
+
 # 💬 ChatConnect
 
 Welcome to **ChatConnect** – a real-time chat application built for seamless communication! 🚀 Whether you're looking to connect with friends, collaborate with a team, or build the next-gen messaging experience, ChatConnect has you covered. 🌐
@@ -30,6 +31,12 @@ This service is designed to be extensible. You can easily add:
 - 🎨 **Theme Switcher** – Toggle between light and dark mode
 - 🧑‍🤝‍🧑 **Group & Private Chats** – Create groups or chat one-on-one
 - 🕒 **Message Timestamps** – Know when messages were sent
+
+## Screenshots
+
+<img width="1356" alt="Screenshot 2025-05-28 at 1 00 45 AM" src="https://github.com/user-attachments/assets/f5539f80-1991-46d8-b446-baba5ef9e2f3" />
+<img width="1418" alt="Screenshot 2025-05-28 at 1 01 24 AM" src="https://github.com/user-attachments/assets/eae8fd61-2edb-466c-a039-58064ca12fcd" />
+
 
 
 
